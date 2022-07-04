@@ -1,0 +1,21 @@
+footer {
+  background-color: theme-color("primary");
+  color: white;
+
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    color: white;
+  }
+  .icons {
+    width: 4rem;
+    height: 4rem;
+    transition: transform 0.5s ease-in-out;
+    filter: invert(1);
+  }
+  .icons:hover {
+    transform: rotate(360deg);
+  }
+}

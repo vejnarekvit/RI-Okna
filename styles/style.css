@@ -1,0 +1,315 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
+* {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 1999.98px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1199.98px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 991.98px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 767.98px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 575.98px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+h2 {
+  color: #460b70;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body::-moz-selection {
+  background: #460b70;
+  /* WebKit/Blink Browsers */
+  color: white;
+}
+
+body::selection {
+  background: #460b70;
+  /* WebKit/Blink Browsers */
+  color: white;
+}
+
+body::-moz-selection {
+  background: #460b70;
+  /* Gecko Browsers */
+  color: white;
+}
+
+.btn.btn-red {
+  background-color: #460b70;
+  color: white;
+}
+
+.btn.btn-white {
+  background-color: white;
+  color: #460b70;
+}
+
+.btn.btn-primary {
+  background-color: #460b70;
+  border-color: #460b70;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  color: white;
+}
+
+.btn.btn-primary:not(:disabled):not(.disabled).active, .btn.btn-primary:not(:disabled):not(.disabled):active, .btn.btn-primary.focus, .btn.btn-primary:focus, .btn.btn-primary:focus, .btn.btn-primary:hover {
+  background-color: #640b70;
+  border-color: #640b70;
+}
+
+.btn.btn-secondary {
+  background-color: #640b70;
+  border-color: #640b70;
+  -webkit-box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0px;
+  color: white;
+}
+
+.btn.btn-secondary:not(:disabled):not(.disabled).active, .btn.btn-secondary:not(:disabled):not(.disabled):active, .btn.btn-secondary.focus, .btn.btn-secondary:focus, .btn.btn-secondary:focus, .btn.btn-secondary:hover {
+  background-color: #460b70;
+  border-color: #460b70;
+}
+
+.btn.btn-dark {
+  background-color: #460b70;
+  border: 1px solid white;
+  border-radius: 0px;
+  color: white;
+}
+
+.btn.btn-dark:not(:disabled):not(.disabled).active, .btn.btn-dark:not(:disabled):not(.disabled):active, .btn.btn-dark.focus, .btn.btn-dark:focus, .btn.btn-dark:focus, .btn.btn-dark:hover {
+  background-color: white;
+  color: #460b70;
+  border-color: #460b70;
+}
+
+.btn.btn-medium {
+  padding: 0.4rem 2rem;
+}
+
+.btn.btn-large {
+  padding: 0.4rem 9rem;
+}
+
+@media only screen and (max-width: 991.98px) {
+  .custom-width {
+    width: 100% !important;
+  }
+}
+
+.navbar {
+  background-color: #460b70;
+  padding: 0.5rem 2rem;
+}
+
+.navbar .navbar-brand img {
+  height: 2rem;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.navbar .menu-item {
+  margin: 0 0.6rem;
+}
+
+.navbar .menu-item .nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  font-size: 1.1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.navbar .menu-item .nav-link:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.navbar .offcanvas-toggler {
+  position: relative;
+  background: transparent;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.navbar .offcanvas-toggler span {
+  display: block;
+  background-color: black;
+  width: 40px;
+  height: 4px;
+  margin: 7px 0;
+  border-radius: 12px;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.navbar .offcanvas-toggler.open span:nth-child(1) {
+  opacity: 0;
+  -webkit-transform: translate(0, -15px);
+          transform: translate(0, -15px);
+  pointer-events: none;
+}
+
+.navbar .offcanvas-toggler.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.navbar .offcanvas-toggler.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(8px, -8px);
+          transform: rotate(-45deg) translate(8px, -8px);
+}
+
+.offcanvas .menu-item-has-children:hover > .dropdown-menu {
+  display: block;
+}
+
+.offcanvas .dropdown-menu {
+  display: none;
+  width: auto;
+  margin: 0;
+  padding-bottom: 0;
+  background-color: white;
+}
+
+.offcanvas .dropdown-menu .dropdown-item {
+  margin: 0;
+  padding: 0.3rem 2rem;
+  color: black;
+  background: transparent;
+}
+
+.offcanvas .dropdown-menu .dropdown-item .active {
+  color: #460b70;
+}
+
+.offcanvas .dropdown-menu .dropdown-item:hover {
+  color: #460b70;
+}
+
+.offcanvas .offcanvas-body div #top-menu .menu-item .nav-link {
+  text-decoration: none;
+  font-weight: 600;
+  color: black !important;
+  font-size: 1.1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+main.front-page .typewrite {
+  color: white;
+}
+
+main.front-page .invert {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+main.front-page .banner-wrap .banner {
+  height: 300px;
+  background: #460b70;
+}
+
+main.front-page .border-radius img {
+  border-radius: 25px;
+}
+
+main.page .typewrite {
+  color: white;
+}
+
+main.page .invert {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+main.page .banner-wrap .banner {
+  height: 300px;
+  background: #460b70;
+}
+
+main.page .border-radius img {
+  border-radius: 25px;
+}
+
+main.error-404 h1 {
+  font-size: 14rem;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 767.98px) {
+  main.error-404 h1 {
+    font-size: 8rem;
+  }
+}
+
+footer {
+  background-color: #460b70;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: white;
+}
+
+footer .icons {
+  width: 4rem;
+  height: 4rem;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+footer .icons:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+/*# sourceMappingURL=style.css.map */

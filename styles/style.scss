@@ -1,0 +1,52 @@
+@import "_config.scss";
+
+@import "_navbar.scss";
+
+main.front-page {
+  .typewrite {
+    color: white;
+  }
+  .invert {
+    filter: invert(1);
+  }
+  .banner-wrap {
+    .banner {
+      height: 300px;
+      background: theme-color("primary");
+    }
+  }
+  .border-radius img {
+    border-radius: 25px;
+  }
+}
+
+main.page {
+  .typewrite {
+    color: white;
+  }
+  .invert {
+    filter: invert(1);
+  }
+  .banner-wrap {
+    .banner {
+      height: 300px;
+      background: theme-color("primary");
+    }
+  }
+  .border-radius img {
+    border-radius: 25px;
+  }
+}
+
+main.error-404 {
+  h1 {
+    font-size: 14rem;
+    font-weight: 700;
+
+    @media screen and (max-width: $md) {
+      font-size: 8rem;
+    }
+  }
+}
+
+@import "_footer.scss";
